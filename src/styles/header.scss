@@ -1,0 +1,39 @@
+header {
+  //   background-color: pink;
+  .inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      bottom: 0;
+      height: 1px;
+      background: #ddd;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+
+        &:hover {
+          color: #4a90e2;
+        }
+      }
+    }
+  }
+}

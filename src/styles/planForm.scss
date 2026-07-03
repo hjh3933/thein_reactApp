@@ -1,0 +1,43 @@
+.form-container {
+  //   background-color: pink;
+  h1 {
+    text-align: center;
+  }
+  .plan-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: rgb(241, 237, 225);
+    max-width: 400px;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+
+      span {
+        width: 70px;
+        flex-shrink: 0;
+      }
+      input,
+      select,
+      textarea {
+        flex: 1;
+        padding: 5px;
+      }
+      textarea {
+        height: 80px;
+      }
+    }
+    button {
+      &:hover {
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
